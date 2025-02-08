@@ -91,3 +91,10 @@ footer {
 .container {
   padding: 30px;
 }
+
+.profile-img {
+  width: 150px; /* Image ka width set karein */
+  height: 150px; /* Image ka height set karein */
+  border-radius: 50%; /* Image ko circular shape dene ke liye */
+  margin-bottom: 20px; /* Thoda space add karein */
+}
