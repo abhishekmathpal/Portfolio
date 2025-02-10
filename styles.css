@@ -140,21 +140,45 @@ footer h2 {
 
 .contact-links {
     display: flex;
-    flex-direction: column; /* Change to column layout */
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-.contact-links a, .contact-links div {
-    text-decoration: none;
-    color: #ffcc00;
-    font-size: 1.2rem;
+.contact-card {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    text-align: center;
+    color: #ffffff;
 }
 
-.contact-links a:hover {
-    color: #ffffff;
+.contact-card div {
+    width: 70px;
+    height: 70px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.contact-card div svg {
+    width: 30px;
+    height: 30px;
+    color: #ffcc00;
+}
+
+.contact-card h3 {
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.contact-card p {
+    font-size: 0.9rem;
+    margin: 0;
 }
