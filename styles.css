@@ -123,7 +123,7 @@ section h3 {
     color: #ffcc00;
 }
 
-.project-card p {
+project-card p {
     font-size: 0.9rem;
 }
 
@@ -156,8 +156,8 @@ footer h2 {
 }
 
 .contact-card div {
-    width: 70px;
-    height: 70px;
+    width: 150px;
+    height: 150px;
     background-color: #333;
     border-radius: 50%;
     display: flex;
@@ -167,8 +167,8 @@ footer h2 {
 }
 
 .contact-card div svg {
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
     color: #ffcc00;
 }
 
