@@ -13,68 +13,40 @@ body {
     padding-top: 60px; /* Navbar ke liye space adjust karne ke liye */
 }
 
-/* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #111;
-    padding: 15px 20px;
-    position: relative;
+/* Navigation Bar */
+nav {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.nav-links {
+nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-.nav-links li {
+nav ul li {
     display: inline;
 }
 
-.nav-links a {
+nav ul li a {
+    color: #ffcc00;
     text-decoration: none;
-    color: white;
+    font-size: 1.2rem;
+    transition: 0.3s;
 }
 
-/* Menu icon for mobile */
-.menu-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
+nav ul li a:hover {
+    color: #ffffff;
 }
 
-/* Responsive Navbar for Small Screens */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: #222;
-        padding: 10px;
-        border-radius: 5px;
-        width: 150px; /* Width Set */
-    }
-
-    /* When menu is active */
-    .nav-links.active {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    /* Ensure buttons are inside the menu */
-    .nav-links li {
-        display: block;
-        text-align: center;
-        padding: 10px 0;
-    }
 
 header {
     text-align: center;
