@@ -40,12 +40,12 @@ section {
 /* Updated Profile Image Section */
 section img {
     display: block;
-    max-width: 250px; /* Increased size */
-    height: 250px; /* Maintain aspect ratio */
+    max-width: 250px;
+    height: 250px;
     margin: 0 auto;
-    border-radius: 50%; /* Circular shape */
-    border: 5px solid #ffcc00; /* Same yellow border as seen in GitHub profile */
-    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5); /* Soft glow effect */
+    border-radius: 50%;
+    border: 5px solid #ffcc00;
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5);
 }
 
 section h2 {
@@ -143,48 +143,32 @@ footer h2 {
     color: #ffcc00;
 }
 
-/* Contact Section New Design */
+/* Updated Contact Section Design */
 .contact-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
-.contact-card {
+.contact-links a {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    text-align: center;
-    color: #ffffff;
-}
-
-.contact-card div {
-    width: 150px;
-    height: 150px;
     background-color: #333;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
 }
 
-.contact-card div svg {
-    width: 70px;
-    height: 70px;
-    color: #ffcc00;
+.contact-links a:hover {
+    background-color: #ffcc00;
+    color: #0d0d0d;
 }
 
-.contact-card h3 {
+.contact-links a span {
     font-size: 1rem;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-.contact-card p {
-    font-size: 0.9rem;
-    margin: 0;
 }
