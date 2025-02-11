@@ -140,8 +140,9 @@ section h3 {
 
 .grid {
     display: flex;
+    flex-direction: column;
     gap: 1.5rem;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 .project-card {
@@ -150,8 +151,8 @@ section h3 {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
     text-align: center;
-    width: calc(33.333% - 1rem);
-    flex: 1;
+    width: 90%;
+    max-width: 600px;
 }
 
 .project-card img {
