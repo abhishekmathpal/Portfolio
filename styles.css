@@ -37,11 +37,15 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
 }
 
+/* Updated Profile Image Section */
 section img {
     display: block;
-    max-width: 150px;
+    max-width: 250px; /* Increased size */
+    height: 250px; /* Maintain aspect ratio */
     margin: 0 auto;
-    border-radius: 50%;
+    border-radius: 50%; /* Circular shape */
+    border: 5px solid #ffcc00; /* Same yellow border as seen in GitHub profile */
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5); /* Soft glow effect */
 }
 
 section h2 {
