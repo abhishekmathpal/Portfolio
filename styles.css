@@ -10,6 +10,7 @@ body {
     background-color: #0d0d0d;
     color: #ffffff;
     line-height: 1.6;
+    padding-top: 60px; /* Navbar ke liye space adjust karne ke liye */
 }
 
 /* Navigation Bar */
@@ -17,6 +18,11 @@ nav {
     background-color: #1a1a1a;
     padding: 1rem;
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
@@ -66,7 +72,7 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
 }
 
-/* Updated Profile Image Section */
+/* Profile Image Section */
 section img {
     display: block;
     max-width: 250px;
@@ -106,7 +112,7 @@ section h3 {
     text-align: center;
 }
 
-/* Updated Skill Bars */
+/* Skill Bars */
 .skill-container {
     background-color: #333;
     height: 20px;
@@ -169,7 +175,7 @@ section h3 {
     font-size: 0.9rem;
 }
 
-/* Styling for More Projects Section */
+/* More Projects Section */
 .more-projects {
     background-color: #1a1a1a;
     padding: 1rem;
@@ -205,7 +211,7 @@ section h3 {
     background-color: #e6b800;
 }
 
-/* Resume - Experience & Education Section */
+/* Resume Section */
 .resume-section {
     display: flex;
     flex-direction: column;
@@ -238,7 +244,7 @@ section h3 {
     line-height: 1.5;
 }
 
-/* Updated Contact Section Design */
+/* Contact Section */
 .contact-links {
     display: flex;
     flex-wrap: wrap;
