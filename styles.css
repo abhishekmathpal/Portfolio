@@ -126,10 +126,11 @@ section h3 {
 
 .skill-bar span {
     position: absolute;
-    right: 5px;
-    top: -20px;
+    right: -35px;
+    top: -5px;
     font-size: 0.9rem;
     color: #ffffff;
+    font-weight: bold;
 }
 
 .resume ul {
