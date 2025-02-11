@@ -238,14 +238,32 @@ section h3 {
     line-height: 1.5;
 }
 
-/* Contact Section */
-footer {
-    text-align: center;
-    padding: 2rem;
-    background-color: #1a1a1a;
+/* Updated Contact Section Design */
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
-footer h2 {
-    font-size: 1.5rem;
-    color: #ffcc00;
+.contact-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #333;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background-color: #ffcc00;
+    color: #0d0d0d;
+}
+
+.contact-links a span {
+    font-size: 1rem;
 }
