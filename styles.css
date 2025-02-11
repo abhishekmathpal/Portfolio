@@ -121,6 +121,15 @@ section h3 {
     height: 100%;
     border-radius: 5px;
     background-color: #ffcc00;
+    position: relative;
+}
+
+.skill-bar span {
+    position: absolute;
+    right: 5px;
+    top: -20px;
+    font-size: 0.9rem;
+    color: #ffffff;
 }
 
 .resume ul {
