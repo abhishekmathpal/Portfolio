@@ -36,6 +36,7 @@ nav {
     padding: 0.5rem;
 }
 
+/* Hide Menu by Default */
 nav ul {
     list-style: none;
     display: none; /* Default hidden */
@@ -70,7 +71,7 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
-/* Desktop View - Hide 3 dot and Show Menu */
+/* Desktop View - Show Menu on Click Only */
 @media screen and (min-width: 768px) {
     .menu-icon {
         display: block;
@@ -81,6 +82,11 @@ nav ul li a:hover {
     }
 }
 
+/* Ensure Background & Colors Stay Intact */
+section {
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
 
 header {
     text-align: center;
