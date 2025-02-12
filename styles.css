@@ -23,17 +23,38 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    color: #ffcc00;
+    padding: 0.5rem;
 }
 
 nav ul {
     list-style: none;
+    display: none; /* Default hidden */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #1a1a1a;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul.active {
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
 }
 
 nav ul li {
-    display: inline;
+    padding: 10px 0;
 }
 
 nav ul li a {
@@ -41,12 +62,24 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.2rem;
     transition: 0.3s;
+    display: block;
+    padding: 10px;
 }
 
 nav ul li a:hover {
     color: #ffffff;
 }
 
+/* Desktop View - Hide 3 dot and Show Menu */
+@media screen and (min-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+    }
+}
 
 header {
     text-align: center;
