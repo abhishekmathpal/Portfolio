@@ -50,14 +50,12 @@ header {
 }
 
 header h1 {
-    font-size: 2rem; /* Reduced size */
+    font-size: 1.8rem; /* Reduced size */
     color: #ffcc00;
-    display: inline-block;
-    white-space: nowrap;
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #ffffff;
     overflow: hidden;
     display: inline-block;
@@ -69,7 +67,7 @@ header p {
 @keyframes typing {
     0% { width: 0; }
     50% { width: 100%; }
-    100% { width: 0; }
+    100% { width: 100%; }
 }
 
 section {
@@ -112,4 +110,165 @@ section p {
     margin: 1rem 0;
 }
 
-/* Additional styles remain unchanged */
+/* Skill Bars */
+.skill-container {
+    background-color: #333;
+    height: 20px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.skill-bar {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    position: relative;
+    text-align: center;
+    line-height: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    transition: width 1.5s ease-in-out;
+}
+
+.resume ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.resume ul li {
+    margin-bottom: 0.5rem;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin: 0.5rem 0;
+    color: #ffcc00;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+}
+
+/* More Projects Section */
+.more-projects {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.more-projects h3 {
+    margin: 0.5rem 0;
+    color: #ffcc00;
+}
+
+.more-projects p {
+    font-size: 0.9rem;
+}
+
+.github-btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.github-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Resume Section */
+.resume-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.resume-entry {
+    background-color: #222;
+    padding: 1.2rem;
+    border-left: 6px solid #ffcc00;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.resume-entry:hover {
+    transform: scale(1.02);
+}
+
+.resume-entry h3 {
+    font-size: 1.6rem;
+    color: #ffcc00;
+}
+
+.resume-entry p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+/* Contact Section */
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #333;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background-color: #ffcc00;
+    color: #0d0d0d;
+}
+
+.contact-links a span {
+    font-size: 1rem;
+}
