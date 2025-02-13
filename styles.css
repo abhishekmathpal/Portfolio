@@ -286,13 +286,18 @@ section p {
 
 /* Make Links Clickable */
 .contact-item a {
-    color: #ffcc00;
+    color: #fff;  /* Updated to white */
     text-decoration: none;
     font-weight: bold;
 }
 
 .contact-item a:hover {
     text-decoration: underline;
+}
+
+/* Ensure Number, Email, and Resume Text is White */
+.contact-item p {
+    color: #fff; /* Updated to white */
 }
 
 /* Social Links */
@@ -309,50 +314,5 @@ section p {
 }
 
 .contact-section .social-links a:hover {
-    color: #fff;
-}
-
-
-.icon {
-    background-color: #222;
-    width: 60px;
-    height: 60px;
-    margin: 10px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-
-.icon i {
-    font-size: 24px;
-    color: #ffcc00;
-}
-
-/* Make Links Clickable */
-.contact-item a {
-    color: #ffcc00;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-item a:hover {
-    text-decoration: underline;
-}
-
-/* Social Links */
-.social-links {
-    margin-top: 20px;
-}
-
-.social-links a {
-    display: inline-block;
-    font-size: 24px;
-    color: #ffcc00;
-    margin: 0 10px;
-    transition: 0.3s;
-}
-
-.social-links a:hover {
     color: #fff;
 }
