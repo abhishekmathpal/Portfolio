@@ -72,8 +72,16 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
 }
 
+/* About Me & Skills Layout */
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
 /* Profile Image Section */
-section img {
+.about-me img {
     display: block;
     max-width: 250px;
     height: 250px;
@@ -83,21 +91,21 @@ section img {
     box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5);
 }
 
-section h2 {
+.about-me h2 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #ffcc00;
 }
 
-section p {
+.about-me p {
     text-align: justify;
     margin: 1rem 0;
 }
 
-section h3 {
-    margin-top: 1.5rem;
-    font-size: 1.5rem;
+.skills h3 {
+    text-align: center;
+    font-size: 1.8rem;
     color: #ffcc00;
 }
 
