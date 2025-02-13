@@ -133,6 +133,82 @@ section h3 {
     color: #000;
 }
 
+.resume ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.resume ul li {
+    margin-bottom: 0.5rem;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin: 0.5rem 0;
+    color: #ffcc00;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+}
+
+/* More Projects Section */
+.more-projects {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.more-projects h3 {
+    margin: 0.5rem 0;
+    color: #ffcc00;
+}
+
+.more-projects p {
+    font-size: 0.9rem;
+}
+
+.github-btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.github-btn:hover {
+    background-color: #e6b800;
+}
+
 /* Resume Section */
 .resume-section {
     display: flex;
