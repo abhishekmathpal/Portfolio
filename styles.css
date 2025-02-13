@@ -43,8 +43,8 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
-/* Profile Section */
-.profile {
+/* Section Styling for all sections */
+.section {
     text-align: center;
     margin: 3rem auto;
     max-width: 600px;
@@ -54,6 +54,19 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
+.section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* Profile Section */
 .profile img {
     width: 180px;
     height: 180px;
@@ -62,60 +75,14 @@ nav ul li a:hover {
     box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5);
 }
 
-.profile h1 {
-    font-size: 2rem;
-    color: #ffcc00;
-    margin-top: 1rem;
-}
-
-.profile p {
-    font-size: 1.1rem;
-    text-align: center;
-    margin-top: 0.5rem;
-}
-
-/* Resume Section */
-.resume {
-    text-align: center;
-    padding: 2rem;
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
-    margin: 2rem auto;
-    max-width: 600px;
-}
-
-.resume h2 {
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: #ffcc00;
-}
-
-.resume p {
-    font-size: 1rem;
-    margin-top: 1rem;
-    text-align: justify;
-}
-
-/* Experience & Education Sections */
-.experience, .education {
-    margin: 2rem auto;
-    max-width: 600px;
-}
-
-.experience h2, .education h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    color: #ffcc00;
-}
-
+/* Card Style for Experience, Education, and Resume */
 .card {
     background-color: #222;
     padding: 1.5rem;
     border-radius: 10px;
     margin-top: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    text-align: left;
 }
 
 .card h3 {
@@ -128,9 +95,10 @@ nav ul li a:hover {
     font-size: 1.2rem;
     font-weight: 600;
     margin-top: 5px;
+    color: #ffcc00;
 }
 
-.card p {
+.card p, .card ul li {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.6;
@@ -139,11 +107,6 @@ nav ul li a:hover {
 .card ul {
     margin-top: 10px;
     padding-left: 20px;
-}
-
-.card ul li {
-    font-size: 1rem;
-    line-height: 1.6;
 }
 
 /* Contact Links */
