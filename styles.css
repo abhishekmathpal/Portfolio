@@ -63,64 +63,52 @@ header p {
     color: #ffffff;
 }
 
-section {
-    margin: 2rem auto;
-    padding: 1rem;
-    max-width: 900px;
-    border-radius: 8px;
-    background-color: #1a1a1a;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
-}
-
-/* About Me & Skills Layout */
-.about-skills {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
 }
 
-/* Profile Image Section */
-.about-me img {
-    display: block;
-    max-width: 250px;
+/* Profile Section */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 250px;
     height: 250px;
-    margin: 0 auto;
     border-radius: 50%;
     border: 5px solid #ffcc00;
     box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5);
 }
 
-.about-me h2 {
+.profile-info {
+    margin-top: 1rem;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+/* Skills Section */
+.skills {
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.skills h2 {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 1rem;
     color: #ffcc00;
 }
 
-.about-me p {
-    text-align: justify;
-    margin: 1rem 0;
-}
-
-.skills h3 {
-    text-align: center;
-    font-size: 1.8rem;
-    color: #ffcc00;
-}
-
-.flex {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: 1rem 0;
-}
-
-.flex > div {
-    text-align: center;
-}
-
-/* Skill Bars */
 .skill-container {
     background-color: #333;
     height: 20px;
@@ -135,12 +123,31 @@ section {
     height: 100%;
     border-radius: 5px;
     background-color: #ffcc00;
-    position: relative;
     text-align: center;
     line-height: 20px;
     font-size: 1rem;
     font-weight: bold;
     color: #000;
+}
+
+/* About Me Section */
+.about {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    text-align: justify;
 }
 
 .resume ul {
