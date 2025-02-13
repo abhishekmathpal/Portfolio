@@ -6,11 +6,11 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #0d0d0d;
     color: #ffffff;
     line-height: 1.6;
-    padding-top: 60px;
+    padding-top: 60px; /* Navbar ke liye space adjust karne ke liye */
 }
 
 /* Navigation Bar */
@@ -32,6 +32,10 @@ nav ul {
     gap: 1.5rem;
 }
 
+nav ul li {
+    display: inline;
+}
+
 nav ul li a {
     color: #ffcc00;
     text-decoration: none;
@@ -43,84 +47,216 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
-/* Section Styling for all sections */
-.section {
+header {
     text-align: center;
-    margin: 3rem auto;
-    max-width: 600px;
-    padding: 2rem;
+    padding: 2rem 0;
     background-color: #1a1a1a;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
-.section h2 {
-    font-size: 2rem;
-    font-weight: bold;
+header h1 {
+    font-size: 2.5rem;
     color: #ffcc00;
-    margin-bottom: 1rem;
 }
 
-.section p {
-    font-size: 1.1rem;
-    text-align: justify;
+header p {
+    font-size: 1.2rem;
+    color: #ffffff;
 }
 
-/* Profile Section */
-.profile img {
-    width: 180px;
-    height: 180px;
+section {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 900px;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Profile Image Section */
+section img {
+    display: block;
+    max-width: 250px;
+    height: 250px;
+    margin: 0 auto;
     border-radius: 50%;
     border: 5px solid #ffcc00;
     box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5);
 }
 
-/* Card Style for Experience, Education, and Resume */
-.card {
-    background-color: #222;
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin-top: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    text-align: left;
-}
-
-.card h3 {
-    font-size: 1.3rem;
-    color: #f4b400;
-    font-weight: bold;
-}
-
-.card h4 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-top: 5px;
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
     color: #ffcc00;
 }
 
-.card p, .card ul li {
+section p {
+    text-align: justify;
+    margin: 1rem 0;
+}
+
+section h3 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #ffcc00;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.flex > div {
+    text-align: center;
+}
+
+/* Skill Bars */
+.skill-container {
+    background-color: #333;
+    height: 20px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.skill-bar {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    position: relative;
+    text-align: center;
+    line-height: 20px;
     font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.6;
+    font-weight: bold;
+    color: #000;
 }
 
-.card ul {
+.resume ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.resume ul li {
+    margin-bottom: 0.5rem;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin: 0.5rem 0;
+    color: #ffcc00;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+}
+
+/* More Projects Section */
+.more-projects {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.more-projects h3 {
+    margin: 0.5rem 0;
+    color: #ffcc00;
+}
+
+.more-projects p {
+    font-size: 0.9rem;
+}
+
+.github-btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
     margin-top: 10px;
-    padding-left: 20px;
 }
 
-/* Contact Links */
+.github-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Resume Section */
+.resume-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.resume-entry {
+    background-color: #222;
+    padding: 1.2rem;
+    border-left: 6px solid #ffcc00;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.resume-entry:hover {
+    transform: scale(1.02);
+}
+
+.resume-entry h3 {
+    font-size: 1.6rem;
+    color: #ffcc00;
+}
+
+.resume-entry p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+/* Contact Section */
 .contact-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .contact-links a {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
     background-color: #333;
     padding: 0.8rem 1.2rem;
     border-radius: 8px;
@@ -132,4 +268,8 @@ nav ul li a:hover {
 .contact-links a:hover {
     background-color: #ffcc00;
     color: #0d0d0d;
+}
+
+.contact-links a span {
+    font-size: 1rem;
 }
