@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek Mathpal</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    </head>
 <body>
+
     <nav>
         <div class="menu-icon" onclick="toggleMenu()">☰</div>
         <ul id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
@@ -24,42 +25,48 @@
             nav.classList.toggle("active");
         }
     </script>
-    
+
+</body>
+</html>
+
     <!-- Header Section -->
     <header id="home">
         <h1>Hi, I'm Abhishek Mathpal</h1>
         <p>An Aspiring Data Analyst</p>
     </header>
-    
-    <div class="container" id="about">
-        <img src="image\01.jpg" alt="Profile Picture" class="profile-img">
-        <h2>Abhishek Mathpal</h2>
-        <p><strong>Job Role:</strong> Data Analyst</p>
-        <p><strong>Experience:</strong> 8 Months</p>
-        <p><strong>Address:</strong> Kashipur, India</p>
-        
-        <h3>Skills</h3>
-        <p>SQL 70%</p>
-        <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
-        <p>MS-Excel 80%</p>
-        <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
-        <p>Data Visualization 85%</p>
-        <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
-        <p>Statistical Analysis 60%</p>
-        <div class="skill-bar"><div class="skill-level" style="width: 60%;"></div></div>
-        
-        <h3>About Me</h3>
-        <p>I am a Data Analyst with a strong passion for transforming complex data into actionable insights. Proficient in Python, SQL, and data visualization tools like Power BI, I focus on uncovering trends and patterns that drive data-driven decisions. With expertise in statistical analysis and data manipulation, I aim to provide meaningful solutions that enhance business strategies. I am committed to continuous learning and apply my analytical skills to solve real-world problems.</p>
-        
-        <h3>Profile</h3>
-        <p><strong>Data Analytics</strong></p>
-        <p><strong>Education:</strong> Bachelor of Commerce</p>
-        <p><strong>Languages:</strong> English, Hindi</p>
-        <p><strong>BI Tools:</strong> Microsoft Power BI & Tableau</p>
-        <p><strong>Other Skills:</strong> Excel & SQL(MySQL)</p>
-    </div>
 </body>
 </html>
+
+    <!-- About Me Section -->
+    <section>
+        <img src="image\01.jpg" alt="Profile Picture">
+        <div>
+            <h2>About Me</h2>
+            <p>I am a Data Analyst with a strong passion for transforming complex data into actionable insights. Proficient in Python, SQL, and data visualization tools like Power BI, I focus on uncovering trends and patterns that drive data-driven decisions. With expertise in statistical analysis and data manipulation, I aim to provide meaningful solutions that enhance business strategies. I am committed to continuous learning and apply my analytical skills to solve real-world problems. Explore my repositories to see my projects and contributions to the field of data analysis..</p>
+        </div>
+        <div>
+            <h3>Skills</h3>
+            <div class="flex">
+                <div>
+    <p>Excel</p>
+    <div class="skill-container">
+        <div class="skill-bar" style="width: 70%;" data-skill="70">70%</div>
+    </div>
+</div>
+<div>
+    <p>SQL</p>
+    <div class="skill-container">
+        <div class="skill-bar" style="width: 80%;" data-skill="80">80%</div>
+    </div>
+</div>
+<div>
+    <p>Power BI</p>
+    <div class="skill-container">
+        <div class="skill-bar" style="width: 85%;" data-skill="85">85%</div>
+    </div>
+</div>
+        </div>
+    </section>
 
     <!-- Resume Section -->
     <section class="resume">
