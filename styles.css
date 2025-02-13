@@ -288,6 +288,17 @@ body {
     color: #ffcc00;
 }
 
+/* Make Links Clickable */
+.contact-item a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
 /* Social Links */
 .social-links {
     margin-top: 20px;
