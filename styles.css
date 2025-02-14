@@ -218,36 +218,7 @@ section p {
     font-size: 0.9rem;
 }
 
-/* Wrapper to center the section */
-/* Ensure both sections stay together */
-.projects-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Ensures content stacks properly */
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-/* Remove any margin/padding that might be causing a gap */
-.projects-container > * {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* Individual project styling */
-.project-card {
-    width: 90%;
-    max-width: 600px;
-    background-color: #1a1a1a;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
-    text-align: center;
-}
-
-/* More Projects Section – Directly Below */
+/* More Projects Section */
 .more-projects {
     background-color: #1a1a1a;
     padding: 1rem;
@@ -256,11 +227,17 @@ section p {
     text-align: center;
     width: 90%;
     max-width: 600px;
-    margin-top: 0 !important; /* Make sure it stays attached */
-    position: relative; /* Ensures normal stacking */
 }
 
-/* GitHub Button */
+.more-projects h3 {
+    margin: 0.5rem 0;
+    color: #ffcc00;
+}
+
+.more-projects p {
+    font-size: 0.9rem;
+}
+
 .github-btn {
     display: inline-block;
     background-color: #ffcc00;
@@ -276,8 +253,6 @@ section p {
 .github-btn:hover {
     background-color: #e6b800;
 }
-
-
 
 /* Resume Section */
 .resume-section {
