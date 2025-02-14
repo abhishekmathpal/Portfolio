@@ -34,72 +34,57 @@ body {
     color: white;
 }
 
-/* Menu Icon */
+/* Menu Icon (Always Visible) */
 .menu-icon {
     font-size: 24px;
     color: white;
     cursor: pointer;
-    display: none;
+    display: block;  /* Always visible */
 }
 
-/* Menu Styling */
+/* Menu Styling (Initially Hidden) */
 .menu {
-    display: flex;
-    gap: 1.5rem;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: black;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
+/* Menu Items */
 .menu ul {
     list-style: none;
-    display: flex;
-    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
 }
 
 .menu ul li {
-    padding: 10px;
+    padding: 12px;
+    text-align: center;
 }
 
 .menu ul li a {
     text-decoration: none;
     color: yellow;
-    font-size: 1.2rem;
-    transition: 0.3s;
+    font-size: 18px;
+    display: block;
 }
 
-.menu ul li a:hover {
-    color: white;
+/* Show Menu when Active */
+.menu.active {
+    display: flex;
 }
 
-/* Responsive Navbar */
-@media screen and (max-width: 768px) {
+/* Force Hide Menu in Laptop/Desktop */
+@media screen and (min-width: 769px) {
     .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: black;
-        width: 200px;
-        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    }
-
-    .menu ul {
-        flex-direction: column;
-        text-align: center;
-        padding: 0;
-    }
-
-    .menu ul li {
-        padding: 12px;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    .menu.active {
-        display: flex;
+        display: none; /* Hide menu by default */
     }
 }
+
 
 
 header {
