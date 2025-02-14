@@ -321,8 +321,8 @@ section p {
 }
 
 /* Experience & Education Date Styling */
-.experience-date,
-.education-date {
+.experience .date,
+.education .date {
     color: yellow;
     font-weight: bold;
 }
