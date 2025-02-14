@@ -178,42 +178,6 @@ section p {
     color: #000;
     transition: width 1.5s ease-in-out;
 }
-
-/* Heading Styling */
-h1 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #f4b400; /* Yellow color */
-    text-align: center;
-}
-
-/* Paragraph Styling */
-p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-/* Details Inside About Section */
-.details {
-    margin-top: 20px;
-}
-
-/* Profile, Education, Language Section (Same as About Me) */
-.skills-section {
-    max-width: 600px;
-    margin: 20px auto;
-    background-color: #181818; /* Same dark background */
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    text-align: left;
-}
-
-/* Highlighted Text */
-.details strong, 
-.skills-section strong {
-    color: #f4b400; /* Yellow Accent */
-}
 .resume ul {
     list-style-type: disc;
     padding-left: 2rem;
