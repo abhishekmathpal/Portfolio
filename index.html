@@ -5,38 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek Mathpal</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-
     <header class="navbar">
         <div class="logo">Abhishek Mathpal</div>
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-icon">&#9776;</div>
         <nav class="menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector(".menu");
-            menu.classList.toggle("active");
-        }
-    </script>
-
-</body>
-</html>
-
-    <!-- Header Section -->
-    <header id="home">
+    <!-- Content Sections -->
+    <section id="home">
         <h1>Hi, I'm Abhishek Mathpal</h1>
         <p>An Aspiring Data Analyst</p>
-    </header>
+    </section>
+    
+    <!-- Other Sections -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu-icon");
+            const menu = document.querySelector(".menu");
+            const menuLinks = document.querySelectorAll(".menu a");
+
+            menuIcon.addEventListener("click", function () {
+                menu.classList.toggle("active");
+            });
+
+            menuLinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    menu.classList.remove("active");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
 
     <!-- Profile Image and Details -->
     <section>
