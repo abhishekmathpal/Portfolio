@@ -39,7 +39,7 @@ body {
     font-size: 24px;
     color: white;
     cursor: pointer;
-    display: block;
+    display: block;  /* Always visible */
 }
 
 /* Menu Styling (Initially Hidden) */
@@ -78,22 +78,12 @@ body {
     display: flex;
 }
 
-/* JavaScript to Toggle Menu */
-document.addEventListener("DOMContentLoaded", function () {
-    const menuIcon = document.querySelector(".menu-icon");
-    const menu = document.querySelector(".menu");
-    
-    menuIcon.addEventListener("click", function () {
-        menu.classList.toggle("active");
-    });
-    
-    // Close menu when clicking on any menu item
-    document.querySelectorAll(".menu ul li a").forEach(item => {
-        item.addEventListener("click", function () {
-            menu.classList.remove("active");
-        });
-    });
-});
+/* Force Hide Menu in Laptop/Desktop */
+@media screen and (min-width: 769px) {
+    .menu {
+        display: none; /* Hide menu by default */
+    }
+}
 
 
 
