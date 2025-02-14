@@ -235,11 +235,15 @@ section p {
     text-align: center;
     width: 90%;
     max-width: 600px;
+    margin-top: 0; /* Extra space hatane ke liye */
 }
-  
-.more-projects h3 {
-    margin: 0.5rem 0;
-    color: #ffcc00;
+
+/* Parent container jo projects ko ek sath rakhega */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0; /* Do sections ke beech gap hata diya */
 }
 
 .more-projects p {
