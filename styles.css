@@ -224,8 +224,14 @@ section p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0; /* Sections ke beech ka gap hata diya */
+    gap: 0; /* Projects ke beech koi gap nahi hoga */
     margin: 0;
+    padding: 0;
+}
+
+/* Har project aur more-projects section ke liye */
+.projects-container > * {
+    margin: 0 !important;
     padding: 0;
 }
 
@@ -238,17 +244,7 @@ section p {
     text-align: center;
     width: 90%;
     max-width: 600px;
-    margin-top: 0; /* Extra space hata diya */
-}
-
-/* Yeh ensure karega ki projects ke beech koi unwanted margin na ho */
-.projects-container > * {
-    margin: 0;
-    padding: 0;
-}
-
-.more-projects p {
-    font-size: 0.9rem;
+    margin-top: 0 !important; /* Extra space hatane ke liye */
 }
 
 /* GitHub Button */
