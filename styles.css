@@ -219,23 +219,35 @@ section p {
 }
 
 /* Wrapper to center the section */
-/* Parent container jo projects ko ek sath rakhega */
+/* Ensure both sections stay together */
 .projects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0; /* Projects ke beech koi gap nahi hoga */
+    justify-content: flex-start; /* Ensures content stacks properly */
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
-/* Har project aur more-projects section ke liye */
+/* Remove any margin/padding that might be causing a gap */
 .projects-container > * {
     margin: 0 !important;
-    padding: 0;
+    padding: 0 !important;
 }
 
-/* More Projects Section */
+/* Individual project styling */
+.project-card {
+    width: 90%;
+    max-width: 600px;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* More Projects Section – Directly Below */
 .more-projects {
     background-color: #1a1a1a;
     padding: 1rem;
@@ -244,7 +256,8 @@ section p {
     text-align: center;
     width: 90%;
     max-width: 600px;
-    margin-top: 0 !important; /* Extra space hatane ke liye */
+    margin-top: 0 !important; /* Make sure it stays attached */
+    position: relative; /* Ensures normal stacking */
 }
 
 /* GitHub Button */
