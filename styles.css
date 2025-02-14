@@ -371,3 +371,38 @@ section p {
     font-weight: bold !important;
 }
 
+<link rel="stylesheet" href="styles.css">  <!-- CSS File -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.querySelector(".menu-icon");
+        const menu = document.querySelector(".menu");
+        const menuLinks = document.querySelectorAll(".menu ul li a");
+
+        // Toggle menu on click
+        function toggleMenu() {
+            menu.classList.toggle("active");
+        }
+
+        menuIcon.addEventListener("click", toggleMenu);
+
+        // Smooth scrolling effect
+        menuLinks.forEach(link => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute("href").substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 50, 
+                        behavior: "smooth"
+                    });
+                }
+
+                // Close menu on link click (for mobile)
+                menu.classList.remove("active");
+            });
+        });
+    });
+</script>
