@@ -219,11 +219,14 @@ section p {
 }
 
 /* Wrapper to center the section */
-.more-projects-wrapper {
+/* Parent container jo projects ko ek sath rakhega */
+.projects-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    gap: 0; /* Sections ke beech ka gap hata diya */
+    margin: 0;
+    padding: 0;
 }
 
 /* More Projects Section */
@@ -235,21 +238,20 @@ section p {
     text-align: center;
     width: 90%;
     max-width: 600px;
-    margin-top: 0; /* Extra space hatane ke liye */
+    margin-top: 0; /* Extra space hata diya */
 }
 
-/* Parent container jo projects ko ek sath rakhega */
-.projects-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0; /* Do sections ke beech gap hata diya */
+/* Yeh ensure karega ki projects ke beech koi unwanted margin na ho */
+.projects-container > * {
+    margin: 0;
+    padding: 0;
 }
 
 .more-projects p {
     font-size: 0.9rem;
 }
 
+/* GitHub Button */
 .github-btn {
     display: inline-block;
     background-color: #ffcc00;
@@ -265,6 +267,7 @@ section p {
 .github-btn:hover {
     background-color: #e6b800;
 }
+
 
 
 /* Resume Section */
