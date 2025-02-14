@@ -182,29 +182,44 @@ section p {
 .about {
     max-width: 600px;
     margin: auto;
+    background-color: #181818; /* Dark background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
     font-size: 32px;
     font-weight: bold;
-    color: #fff;
+    color: #f4b400; /* Yellow color */
+    text-align: center;
 }
 
+/* Paragraph Styling */
 p {
     font-size: 18px;
     line-height: 1.6;
 }
 
+/* About Section Details */
 .details {
     margin-top: 20px;
 }
 
-.details p {
-    font-size: 18px;
-    margin: 5px 0;
+/* Profile, Education, Language Section */
+.skills-section {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #181818; /* Same dark background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
 }
 
-.details strong {
+/* Highlighted Text */
+.details strong, 
+.skills-section strong {
     color: #f4b400; /* Yellow Accent */
 }
 
