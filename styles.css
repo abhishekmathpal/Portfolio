@@ -219,6 +219,14 @@ section p {
 }
 
 /* More Projects Section */
+/* Center the More Projects Section */
+.more-projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
 /* More Projects Section */
 .more-projects {
     background-color: #1a1a1a;
@@ -228,15 +236,8 @@ section p {
     text-align: center;
     width: 90%;
     max-width: 600px;
-    
-    /* Center alignment */
-    margin: auto;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
-
+  
 .more-projects h3 {
     margin: 0.5rem 0;
     color: #ffcc00;
@@ -261,6 +262,7 @@ section p {
 .github-btn:hover {
     background-color: #e6b800;
 }
+
 
 
 /* Resume Section */
