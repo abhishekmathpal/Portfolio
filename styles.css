@@ -320,7 +320,10 @@ section p {
     color: #ffffff;
 }
 
-/* Experience and Education Date Color */
-.resume-entry p:first-of-type {
-    color: #ffcc00; /* Yellow color for dates */
+/* Experience & Education Date Styling */
+.experience-date,
+.education-date {
+    color: yellow;
+    font-weight: bold;
 }
+
