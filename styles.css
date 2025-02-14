@@ -14,39 +14,44 @@ body {
 }
 
 /* Navigation Bar */
-nav {
-    background-color: #1a1a1a;
-    padding: 1rem;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-/* Menu Icon (☰) */
+/* Logo Styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Menu Icon (Always Visible) */
 .menu-icon {
     font-size: 24px;
     color: white;
     cursor: pointer;
-    display: block;
-    padding: 0 20px;
+    display: block;  /* Always visible */
 }
 
-/* Menu (Hidden by Default) */
+/* Menu Styling (Initially Hidden) */
 .menu {
     display: none;
+    flex-direction: column;
     position: absolute;
     top: 100%;
     right: 0;
     background-color: black;
     width: 200px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    flex-direction: column;
-    text-align: center;
 }
 
 /* Menu Items */
@@ -58,6 +63,7 @@ nav {
 
 .menu ul li {
     padding: 12px;
+    text-align: center;
 }
 
 .menu ul li a {
@@ -72,28 +78,13 @@ nav {
     display: flex;
 }
 
-/* Desktop View - Hide Menu Items */
-@media (min-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
-
+/* Force Hide Menu in Laptop/Desktop */
+@media screen and (min-width: 769px) {
     .menu {
-        display: none;
+        display: none; /* Hide menu by default */
     }
 }
 
-/* JavaScript Embedded */
-script {
-    content: "document.addEventListener('DOMContentLoaded', function () {
-        const menuIcon = document.querySelector('.menu-icon');
-        const menu = document.querySelector('.menu');
-    
-        menuIcon.addEventListener('click', function () {
-            menu.classList.toggle('active');
-        });
-    });";
-}
 
 
 header {
